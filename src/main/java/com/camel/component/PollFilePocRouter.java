@@ -21,11 +21,6 @@ public class PollFilePocRouter extends RouteBuilder {
 			 	.bean(FilePocService.class, "csvToObject")
  			 	.to("seda:update")
 			 .end();
-//			 .log("Done processing big file: ${header.CamelFileName}");
-
-//        from("direct:update")
-//        	.routeId("update").startupOrder(2)
-//        	.bean(FilePocService.class, "updateRecords");
 	}
 
 }
