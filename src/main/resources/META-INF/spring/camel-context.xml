@@ -26,11 +26,12 @@
 		</constructor-arg>
 	</bean>
 
-	<!-- the camel context -->
+	<!-- gracefully shutdown -->
 	<bean id="shutdown" class="org.apache.camel.impl.DefaultShutdownStrategy">
 		<property name="timeout" value="20" />
 	</bean>
 
+    <!-- the camel context -->
 	<camelContext id="camel-poc" xmlns="http://camel.apache.org/schema/spring">
 		<jmxAgent id="agent1" createConnector="true" registryPort="1099" />
 		<routeBuilder ref="restletRouter" />
