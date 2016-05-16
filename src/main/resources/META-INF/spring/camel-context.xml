@@ -31,7 +31,7 @@
 		<property name="timeout" value="20" />
 	</bean>
 
-    <!-- the camel context -->
+    <!-- the camel context 1-->
     <!-- Routes -->
 	<camelContext id="camel-poc" xmlns="http://camel.apache.org/schema/spring">
 		<jmxAgent id="agent1" createConnector="true" registryPort="1099" />
