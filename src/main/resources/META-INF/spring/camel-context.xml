@@ -32,7 +32,7 @@
 	</bean>
 
     <!-- the camel context 1-->
-    <!-- Routes 1 -->
+    <!-- Routes 2 -->
 	<camelContext id="camel-poc" xmlns="http://camel.apache.org/schema/spring">
 		<jmxAgent id="agent1" createConnector="true" registryPort="1099" />
 		<routeBuilder ref="restletRouter" />
