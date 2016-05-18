@@ -82,4 +82,11 @@
 		<finalName>apache-camel-poc</finalName>
 	</build>
 
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <url>http://repo.spring.io/libs-milestone/</url>
+        </repository>
+    </repositories>	
+	
 </project>
